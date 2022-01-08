@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>card um</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum repellat tenetur?</p>
+                <a href="#">Mais informações</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>card dois</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum repellat tenetur?</p>
+                <a href="#">Mais informações</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>card tres</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum repellat tenetur?</p>
+                <a href="#">Mais informações</a>
+            </div>
+        </div>
+    </div>
+    <!-- codigo js-->
+    <script type="text/javascript" src="/script.js"></script>
+    <!--Script usado para dar a animação nos card-->
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max: 25,
+            speed: 400,
+            glare:true,
+           " max-glare": 0.1,
+        });
+    </script>
+</body>
+</html>
